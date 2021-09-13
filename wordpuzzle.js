@@ -7,5 +7,10 @@ $(document).ready(function(){
               inputletters[index]="-"
             }
         }
+        var puzzleString = inputletters.join("");
+        $(".outputstring").text(puzzleString);
+        $("#wordinput").toggle();
+        $("#wordoutput").toggle();
+        event.preventDefault();
     }
 })

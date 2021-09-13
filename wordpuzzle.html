@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <title>Word puzzle</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src = "wordpuzzle.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <form id = "wordpuzzle">
+                <div id = "wordinput" class = "form-group">
+                    <label for = "text-inputs">Enter your words here that you need them to be puzzled</label>
+                    <input id = "textinput" class = "form-control" type = "text">
+                </div>
+                <button type = "submit" class = "btn btn-primary">Show/Hide Puzzle</button>
+            </form>
+            <div id = "wordoutput">
+                <h2>Here is your puzzle:</h2>
+                <p><span class = "outputstring"></span></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -3,5 +3,6 @@ $(document).ready(function(){
         if(e.which == 13) {
             $("body").addId("#hide");
         }
+        e.preventDefault();
     });
 })

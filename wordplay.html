@@ -9,6 +9,20 @@
     </head>
     <body>
         <div class = "container">
-            <h2>I love you</h2>
+            <div class = "col-md-6">
+                <h1>Word Play</h1>
+                <form id = "wordplay">
+                    <div id = "sentenseinput" class = "form-group">
+                        <label for = "sentense-inputs">Enter here your word play sentense:</label>
+                        <textarea id = "sentenseinput" class = "form-control" type = "text"></textarea>
+                    </div>
+                    <br>
+                    <button type = "submit" class = "btn btn-primary">Show/Hide Play</button>
+                </form>
+                <div id = "sentenseoutput">
+                    <h2>Here is your word played:</h2>
+                    <p><span class = "outputstring"></span></p>
+                </div>
+            </div>
         </div>
     </body>

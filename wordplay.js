@@ -6,6 +6,7 @@ $(document).ready(function(){
         console.log(splitSentense);
         var reverseSentense = splitSentense.reverse().join("")
         console.log(reverseSentense);
+        $(".outputstring").text(reverseSentense)
         event.preventDefault();
     });
 });

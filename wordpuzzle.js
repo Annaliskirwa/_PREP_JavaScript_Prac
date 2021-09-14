@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("form#wordpuzzle").submit(function(event) {
-        var stringinput=$("input#textinput").val();
+        var stringinput=$("textarea#textinput").val();
         var inputletters=stringinput.split("");
         console.log(inputletters);
         for(var index=0; index < inputletters.length; index+=1){

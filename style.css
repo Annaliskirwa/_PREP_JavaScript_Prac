@@ -1,13 +1,13 @@
-#hide{
-    display: none;
-}
+/*All sections styling*/
 body{
     color: crimson;
 }
-
+/*Word puzzle styling*/
 #wordinput{
     display: block;
   }
 #wordoutput{
     display: none;
   }
+  /*Groceries styling*/
+  

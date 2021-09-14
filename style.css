@@ -4,3 +4,10 @@
 body{
     color: crimson;
 }
+
+#wordinput{
+    display: block;
+  }
+#wordoutput{
+    display: none;
+  }

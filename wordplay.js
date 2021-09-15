@@ -26,5 +26,7 @@ $(document).ready(function(){
             return reversedStrArr.join(' ');
           }
           console.log(reverseWords())
-    })
+          $(".outputstring2").text(reverseWords)
+          event.preventDefault();
+    });
 });

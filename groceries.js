@@ -1,5 +1,6 @@
 //user interface logic
 $(document).ready(function(){
+    //adding extra groceries form
     $("#add-groceries").click(function(){
         var html = '';
         html += '<div class="form-group">';
@@ -13,10 +14,10 @@ $(document).ready(function(){
         html += '</div>';
         html += '</div>';
         
-
+//adding groceries to list
         $('#new-groceries').append(html);
     })
-    $("button").click(function(event){
+    $("button#showgroceries").click(function(event){
         var item1 = $("#new-first-item").val();
         var item2 = $("#new-second-item").val();
         var item3 = $("#new-third-item").val();
@@ -28,6 +29,12 @@ $(document).ready(function(){
         $("#groceries4").text(itemanother1)
         $("#groceries5").text(itemanother2)
         $("#show-groceries").show();
+
+         //removing groceries from list
+        $("button#removeRow").click(function () {
+            ('#groceries1').remove();
+        });
+
         event.preventDefault();
     });
 });

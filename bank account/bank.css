@@ -1,0 +1,15 @@
+body{
+    background-color: azure;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+    color: crimson;
+    padding: 15px;
+}
+.form-group{
+    padding: 10px;
+}
+.form-group label{
+    margin-left: 20px;
+}

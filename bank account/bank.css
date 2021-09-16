@@ -13,3 +13,7 @@ h1{
 .form-group label{
     margin-left: 20px;
 }
+.row{
+    padding: 10px;
+    justify-content: space-between;
+}

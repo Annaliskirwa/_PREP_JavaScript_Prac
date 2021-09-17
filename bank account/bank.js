@@ -7,7 +7,7 @@ Account.prototype.deposit = function(amount){
     if (this._isPositive(amount)){
         this.balance += amount;
         console.log(`Deposit: ${this.name} new balance is ${this.balance}`);
-        return true
+        return amount
     }
     return false
 }
@@ -46,9 +46,15 @@ $(document).ready(function(){
     $("form#new-account").submit(function(event){
         event.preventDefault();
         var name = $("input#account-name").val();
-        var balance = $("input#initial-deposit").val();
+        var balance1 = $("input#initial-deposit").val();
+        var balance = parseInt(balance1)
         var newAccount = new Account(name, balance);
     $("#output-balance").text(`Name: ${newAccount.name} Amount: ${newAccount.balance}`);
     console.log(newAccount.balance)
+    })
+    $("#confirm2").click(function(){
+        var amount1 = $("input#deposit-amount").val();
+        var amount = parseInt(amount1)
+        console.log(amount)
     })
 })

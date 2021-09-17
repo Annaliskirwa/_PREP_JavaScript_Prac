@@ -37,3 +37,7 @@ Account.prototype._isAllowed = function(amount){
     }
     return true
 }
+function resetFields(){
+    $("input#deposit-amount").val("");
+    $("input#withdraw-amount").val("");
+}

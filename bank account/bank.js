@@ -19,3 +19,11 @@ Account.prototype.withdraw = function(amount){
     }
     return false
 }
+Account.prototype._isPositive = function(amount){
+    const isPositive = amount > 0;
+    if (!isPositive){
+        console.log("Amount must be positive");
+        return false
+    }
+    return true
+}

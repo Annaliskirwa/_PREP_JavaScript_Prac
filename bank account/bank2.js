@@ -8,6 +8,10 @@ BankAccount.prototype.deposit = function(amount){
     this.balance += amount;
 }
 
+BankAccount.prototype.withdraw = function(amount){
+    this.balance -= amount;
+}
+
 BankAccount.prototype.toString = function(){
     return "Name: " + this.name + " Balance: $"+ this.balance;
 };

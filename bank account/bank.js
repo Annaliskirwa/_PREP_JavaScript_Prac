@@ -27,3 +27,13 @@ Account.prototype._isPositive = function(amount){
     }
     return true
 }
+Account.prototype._isAllowed = function(amount){
+    if (!this._isPositive(amount)) return false;
+
+    const isAllowed = this.balance - amount >= 0;
+    if (!isAllowed){
+        console.log("You have insufficient funds");
+        return false
+    }
+    return true
+}

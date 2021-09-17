@@ -17,3 +17,6 @@ h1{
     padding: 10px;
     justify-content: space-between;
 }
+.row h3{
+    margin-left:90px;
+}

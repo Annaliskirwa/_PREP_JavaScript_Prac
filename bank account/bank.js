@@ -1,4 +1,13 @@
-function Account(name,initialdeposit){
+//business logic
+function Account(name, balance) {
     this.name = name;
-    this.initialdeposit = initialdeposit;
+    this.balance = balance;
+  }
+Account.prototype.deposit = function(amount){
+    if (this._isPositive(amount)){
+        this.balance =+ amount;
+        console.log(`Deposit: ${this.name} new balance is ${this.balance}`);
+        return true
+    }
+    return false
 }

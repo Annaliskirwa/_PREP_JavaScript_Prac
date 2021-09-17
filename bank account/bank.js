@@ -41,3 +41,14 @@ function resetFields(){
     $("input#deposit-amount").val("");
     $("input#withdraw-amount").val("");
 }
+//user interface logic
+$(document).ready(function(){
+    $("form#new-account").submit(function(event){
+        event.preventDefault();
+        var name = $("input#account-name").val();
+        var balance = $("input#initial-deposit").val();
+        var newAccount = new Account(name, balance);
+    $("#output-balance").text(`Name: ${newAccount.name} Amount: ${newAccount.balance}`);
+    console.log(newAccount.balance)
+    })
+})

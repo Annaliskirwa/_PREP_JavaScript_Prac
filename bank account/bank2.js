@@ -32,6 +32,15 @@ $(document).ready(function(){
         var dep1 = (parseInt(amount) + parseInt(balance));
         console.log(dep1) 
         $("#output-balance").text(`Name: ${newAccount.name} Amount: $${dep1}`);
+
+        $("#confirm3").click(function(event){
+            event.preventDefault();
+            var amount = $("input#withdraw-amount").val();
+            //amount = parseInt(amount1);
+            var withdraw1 = (dep1- parseInt(amount));
+            console.log(withdraw1) 
+            $("#output-balance").text(`Name: ${newAccount.name} Amount: $${withdraw1}`);
+        });
     });
     });
     

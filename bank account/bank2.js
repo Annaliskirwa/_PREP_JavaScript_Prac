@@ -25,5 +25,14 @@ $(document).ready(function(){
         var newAccount = new BankAccount(name, balance);
     $("#output-balance").text(newAccount);
     console.log(newAccount.toString())
-    })
-})
+    $("#confirm2").click(function(event){
+        event.preventDefault();
+        var amount = $("input#deposit-amount").val();
+        //amount = parseInt(amount1);
+        var dep1 = (parseInt(amount) + parseInt(balance));
+        console.log(dep1) 
+        $("#output-balance").text(`Name: ${newAccount.name} Amount: $${dep1}`);
+    });
+    });
+    
+});

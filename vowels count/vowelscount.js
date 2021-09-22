@@ -16,5 +16,6 @@ $(document).ready(function(){
             return vowelsCount;
           }
         console.log(getVowels())
+        $("#countoutput").text(getVowels)
     })
 })

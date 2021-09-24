@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pig Latin</title>
+    </head>
+    <body>
+        <div class="wrapper">
+          <div id="title">
+            <h1>Pig Latin Translator</h1>
+          </div>
+          <div class="container">
+            <div>
+              <label for="english">Enter English Word:</label>
+               <textarea id="inputText" name="english" onkeypress="process(event, this)"></textarea>
+            </div>
+            <button id="tButton">
+              Translate
+            </button>
+            <div>
+              <label for="pigLatin">Pig Latin Translation:</label>
+               <textarea id="outputText" name="pigLatin"></textarea>
+            </div>
+          </div>
+      
+          <div id="rules">
+            <h1>Pig Latin Rules</h1>
+            <figure>
+              <img width="300" height="197" src="https://fieldlens.com/wp-content/uploads/2015/04/bigstock-Portrait-Of-A-Pig-In-Glasses-61658021.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="smart pig from modernfarmer.com">
+            </figure>
+            <ul>
+              <li class="ruleItem">If a word begins with a pure vowel (a,e,i,o,u), simply add yay to the end.</li>
+              <li class="ruleItem">If a word begins with a consonant, move the initial consonant block to the end of the word and append ay.</li>
+              <li class="ruleItem">If a word contains a y and no additional pure vowels treat the y as a vowel.</li>
+              <li class="ruleItem">If a word contains a y but is followed by a pure vowel at any point later in the word treat the y as a consonant.</li>
+              <li class="ruleItem">Preserve word capitalization from input.</li>
+              <li class="ruleItem">Preserve punctuation from input.</li>
+              <li class="ruleItem">Assert standardized capitalization of the first word in a sentence or phrase.</li>
+            </ul>
+          </div>
+      
+          <footer>
+            All rights reserved &copy; 2021 <br>
+            Annalis Kirwa
+        </footer>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="pig latin.js"></script>
+      </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    background: #212126;
+    font-family: monospace;
+    text-align: center;
+    color: #e8e3d7;
+  }
+  
+  .wrapper {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  #title {
+    margin: 50px;
+    h1 {
+      padding: 10px;
+      border-bottom: 1px solid #e8e3d7;
+    }
+  }
+  
+  .container {
+    background: #2E2F34;
+    border: 2px solid #5e5d5a;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 30px;
+  }
+  
+  #tButton {
+    height: 25px;
+    margin: 20px;
+    border: 2px solid #3D3C3A;
+    border-radius: 4px;
+    background: #212126;
+    color: #e8e3d7;
+  }
+  
+  #tButton:hover {
+    border-color: #5e5d5a;
+  }
+  
+  textarea {
+      padding: 10px;
+      line-height: 1.5;
+      border-radius: 5px;
+      border: 1px solid #3D3C3A;
+      margin: 0 auto;
+      margin-top: 20px;
+      resize: none;
+      background: #242428;
+      color: #e8e3d7;
+  }
+  
+  .textarea-example {
+      font-family: monospace;
+  }
+  
+  .textarea-example div {
+      margin-bottom: 20px;
+  }
+  
+  label,
+  textarea {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 1px;
+  }
+  
+  label {
+      margin-bottom: 5px;
+  }
+  
+  #rules {
+    width: 500px;
+    text-align: left;
+    margin: 0 auto;
+    img {
+      display:block;
+      margin:auto;
+    }
+    figcaption {
+      text-align: right;
+    }
+    h1 {
+      margin: 50px;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #e8e3d7;
+    }
+    .ruleItem {
+      padding: 10px;
+    }
+  }
+  
+  footer {
+    margin-top: 50px;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    .container {
+      margin-top: 10px;
+    }
+    
+    #rules {
+      width: 400px;
+    }
+  }

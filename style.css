@@ -13,3 +13,6 @@ body{
   #show-groceries{
     display: none;
   }
+  h1{
+    text-align: center;
+  }

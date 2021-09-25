@@ -15,4 +15,9 @@ body{
   }
   h1{
     text-align: center;
+    padding-bottom: 30px;
   }
+  .card{
+    padding: 10px;
+  }
+ 

@@ -1,0 +1,23 @@
+/*All sections styling*/
+body{
+    color: crimson;
+}
+/*Word puzzle styling*/
+#wordinput{
+    display: block;
+  }
+#wordoutput{
+    display: none;
+  }
+  /*Groceries styling*/
+  #show-groceries{
+    display: none;
+  }
+  h1{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .card{
+    padding: 10px;
+  }
+ 

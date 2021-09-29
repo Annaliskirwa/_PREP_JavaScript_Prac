@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src = "groceries.js"></script>
+        <title>Groceries</title>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "col-md-12 text-xs-center">
+                <h2>Groceries needed at the store</h2>
+            </div>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <h3>Add your groceries list</h3>
+                    <form id = "new-groceries">
+                        <div class = "form-group">
+                            <label for = "first-item">First item</label>
+                            <input type = "text" class = "form-control" id = "new-first-item">
+                        </div>
+                        <div class = "form-group">
+                            <label for = "second-item">Second item</label>
+                            <input type = "text" class = "form-control" id = "new-second-item">
+                        </div>
+                        <div class = "form-group">
+                            <label for = "third-item">Third item</label>
+                            <input type = "text" class = "form-control" id = "new-third-item">
+                        </div>
+                        <br>
+                        <span class = "btn btn-primary" id = "add-groceries">Any other groceries item?</span>
+                    </form>
+                    <br>
+                    <div>
+                        <button type = "submit" class = "btn btn-secondary" id = "showgroceries">Add all items to the groceries list</button>
+                    </div>
+                </div>
+                <div class ="col-md-6">
+                    <h3>Here is your groceries list:</h3>
+                    <div id = "show-groceries">
+                        <ol>
+                        <li><p id = "groceries1"></p></li>
+                        <li><p id = "groceries2"></p></li>
+                        <li><p id = "groceries3"></p></li>
+                        <li><p id = "groceries4"></p></li>
+                        <li><p id = "groceries5"></p></li>
+                        </ol>
+                        <button id="removeRow" type="button" class="btn btn-danger">Remove groceries item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<!--How to accomodate a growing list, using for loops and maps 
+Like a list past five groceries items while avoiding code repetition*/ -->

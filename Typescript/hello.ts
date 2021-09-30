@@ -49,3 +49,31 @@ function asyncTask (){
     });
     return promise;
 }asyncTask().then((val)=> {console.log(val)}, (err)=> {console.log(err)},)
+
+//promises are created with the new keyword
+var promise = new Promise((resolve, reject)=>{})
+//promises are returned from a function
+function asyncTask(){
+  var promise = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      console.log("Action completed");
+      resolve;
+    }, 1000)
+  });
+  return promise
+}
+//promise notifications
+function asycTask(){
+  var promise = new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+          try{
+           console.log("Action complete");
+           resolve;
+          }catch(err){
+            reject();
+          }
+      },1000);
+  });
+  return promise;
+}
+asycTask().then(()=>{console.log('Event was successful')},()=>{console.log('Event failed')},)

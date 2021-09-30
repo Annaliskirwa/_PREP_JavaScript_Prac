@@ -77,3 +77,36 @@ function asycTask(){
   return promise;
 }
 asycTask().then(()=>{console.log('Event was successful')},()=>{console.log('Event failed')},)
+
+//types 
+//basic types
+let age: number = 19;
+
+//array types
+let numbers: number[] = [1,2,3,4,5];
+let numbers: Array<number> =[1,2,3,4,5];
+
+//function type
+let funct : Function= ()=> console.log("Functioning");
+
+//enum types
+enum Compass{
+  North,
+  South,
+  East,
+  West
+}
+let northStar: Compass = Compass.North;
+
+//class types
+class Car{}
+let bazzar : Car[];
+
+//any type
+let names: any ='James';
+names = 1;
+
+//void type
+function sayPsst():void{
+  console.log('Psst')
+}

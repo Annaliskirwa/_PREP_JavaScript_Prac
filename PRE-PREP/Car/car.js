@@ -8,7 +8,7 @@ var Car = /** @class */ (function () {
         this.engine = new engine_1.Engine();
         this.wheels = new wheels_1.Wheels();
     }
-    Car.prototype.Engine = function () {
+    Car.prototype.startEngine = function () {
         this.engine.start();
     };
     return Car;

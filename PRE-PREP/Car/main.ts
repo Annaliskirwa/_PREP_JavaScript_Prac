@@ -5,7 +5,7 @@ import { Wheels } from './wheels';
 function main(){
   let car = new Car();
 
-  car.Engine();
+  car.startEngine();
 }
 
 main();

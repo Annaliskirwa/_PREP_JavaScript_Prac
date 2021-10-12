@@ -10,7 +10,7 @@ export class Car{
         this.wheels = new Wheels();
     }
 
-    start Engine(){
+    Engine(){
         this.engine.start()
     }
 }
